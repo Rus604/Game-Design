@@ -9,14 +9,16 @@ class PlayState extends FlxState
 	override public function create():Void
 	{
 		super.create();
-		var text = new flixel.text.FlxText(0, 0, 0, "Hello World", 64);
+		var text = new flixel.text.FlxText(0, 0, 0, "My Hero", 64);
 		text.screenCenter();
 		add(text);
 		
-		var spr = new FlxSprite(50, 50);
-		spr.velocity.set(25, 55);
+		for (i in 0...4)
+		{
+		var spr = new Hero(50, 50);
+		spr.velocity.set(i*50, i+45);
 		add(spr);
-		
+		}
 	}
 
 	override public function update(elapsed:Float):Void
