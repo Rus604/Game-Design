@@ -21,7 +21,7 @@ class Hero extends FlxSprite
 		
 	override public function update(elapsed:Float):Void
 	{
-		this.color = 0x663456 & ((Std.int(this.x)* 512 + Std.int(this.y) *64 + Std.int(this.x +this.y) *16);
+		this.color = 0x663456 & ((Std.int(this.x)* 512 + Std.int(this.y) *64 + Std.int(this.x +this.y) *16));
 		
 	    super.update(elapsed);	
 	}
