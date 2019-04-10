@@ -10,16 +10,12 @@ class PlayState extends FlxState
 	{
 		super.create();
 		
-		var text = new flixel.text.FlxText(0, 0, 0, "The Hero", 32);
+		var text = new flixel.text.FlxText(0, 0, 0, "top hero", 32);
 		text.screenCenter();
 		add(text);
 		
-		for (i in 1...10)
-		{
-		var spr = new Hero(25, 25, i);
+		var spr = new TopDownHero(25, 25);
 		add(spr);
-		};
-		
 	}
 
 	override public function update(elapsed:Float):Void
