@@ -20,7 +20,7 @@ import flixel.util.FlxColor;
 		this.makeGraphic(50, 50, FlxColor.RED);
 		
 		// Set acceleration and max velocity to represent gravity.
-		this.acceleration.y = 10;
+		//this.acceleration.y = 10;
 		this.maxVelocity.y = 200;
 		
 		// Set max velocity for x to limit speed of character
@@ -32,6 +32,36 @@ import flixel.util.FlxColor;
 	
 	override public function update(elapsed:Float):Void
 	{
+		//////////////////////////
+		// Basic input handling //
+		//////////////////////////
+
+		var leftPressed:Bool = FlxG.keys.pressed.LEFT;
+		var rightPressed:Bool = FlxG.keys.pressed.RIGHT;
+		var upPressed:Bool = FlxG.keys.pressed.UP;
+		var downPressed:Bool = FlxG.keys.pressed.DOWN;
+		var spaceJustPressed:Bool = FlxG.keys.justPressed.SPACE;
+		
+		// Here are some *very* basic examples of how to respond to input.
+		//  You can do a lot more here to make the game feel much better.
+		if (leftPressed) { 				// Move left
+			this.acceleration.x = -50;
+		} else if (rightPressed) { 		// Move right
+			this.acceleration.x = 50;
+		} else if (upPressed) { 		// Move up
+			 this.acceleration.y = -50;
+		} else if (downPressed) { 		// Move down
+			this.acceleration.y = 50;
+		}else { 						// no action
+			this.velocity.set(0, 0);
+			this.acceleration.set(0, 0);
+		}
+		
+		if (spaceJustPressed) { // Jump. Note: no restrictions that prevent infinite jumping.
+			this.velocity.y = -100;
+		}
+
+		
 		super.update(elapsed);
 	}
 }
