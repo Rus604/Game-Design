@@ -1,5 +1,5 @@
 ### Name of the game: 
-#Brain on blue
+# Brain on blue
 
 ### Short description of gameplay: 
 Side scrolling  adventure game of a brain named BOB.
