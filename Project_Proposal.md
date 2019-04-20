@@ -16,10 +16,10 @@ the interface will be via the keyboard using the "up", "Down",
 "left", and right arrow keys.
 
 ### List of game features:
-..* side scrolling adventure
-..* interesting obstacles to navigate with left right and jump
-..* brain stem is an attack, "down key"
-..* at least two levels , and second level is "moving"faster
+* side scrolling adventure
+* interesting obstacles to navigate with left right and jump
+* brain stem is an attack, "down key"
+* at least two levels , and second level is "moving"faster
 
 ### Realistic goals/expectations for 4 weeks of work on the project:
 with ut a "cool background, it should be do-able, the level may be 
