@@ -9,8 +9,8 @@ overcome various obstacles to eventually find the head.
 ### Win condition:
 BOB is able to navigate past all obsolesces and find a head
 
-###Lose condition:
-obstacles cause enough damage that BOB dies
+### Lose condition:
+Obstacles cause enough damage that BOB dies
 
 ### How the player interacts with the game:
 the interface will be via the keyboard using the "up", "Down",
