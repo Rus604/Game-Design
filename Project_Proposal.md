@@ -22,7 +22,7 @@ the interface will be via the keyboard using the "up", "Down",
 * at least two levels , and second level is "moving"faster
 
 ### Realistic goals/expectations for 4 weeks of work on the project:
-with ut a "cool background, it should be do-able, the level may be 
+without a "cool background, it should be do-able, the level may be 
 the only possible constraint.
 
 ### (Optional) Concept image for game.
