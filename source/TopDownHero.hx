@@ -13,8 +13,7 @@ import flixel.util.FlxColor;
 
  class TopDownHero extends FlxSprite 
 {
-	public var colorCycle:Int = 0;
-	
+
 	public function new(?X:Float=0, ?Y:Float=0, ?SimpleGraphic:FlxGraphicAsset) 
 	{
 		super(X, Y, SimpleGraphic);
@@ -26,12 +25,6 @@ import flixel.util.FlxColor;
 		
 		// Set max velocity for x to limit speed of character
 		this.maxVelocity.x = 200;
-		
-		
-		
-		
-		
-		
 	}
 		
 	override public function update(elapsed:Float):Void
@@ -62,15 +55,7 @@ import flixel.util.FlxColor;
 		}
 		
 		if (spaceJustPressed) {
-			colorCycle = colorCycle + 1;
-			if (colorcycle = 0){
 			this.color = 0x663456;
-			x = x + 1
-			}else if (x = 1){
-				this.color = 0x663456;
-				x = x + 1	
-				}
-			}
 			
 			//this.velocity.y = -100;
 		}
