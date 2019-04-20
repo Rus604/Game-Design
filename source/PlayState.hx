@@ -14,11 +14,11 @@ class PlayState extends FlxState
 		text.screenCenter();
 		add(text);
 		
-		//for (i in 1...10)
-		//{
-		var spr = new TopDownHero(25, 25);
+		for (i in 1...10)
+		{
+		var spr = new Hero(25, 25, i);
 		add(spr);
-		//};
+		};
 		
 	}
 
