@@ -14,8 +14,17 @@ class PlayState extends FlxState
 		text.screenCenter();
 		add(text);
 		
+<<<<<<< HEAD
 		var spr = new TopDownHero(25, 25);
 		add(spr);
+=======
+		//for (i in 1...10)
+		//{
+		var spr = new TopDownHero(25, 25);
+		add(spr);
+		//};
+		
+>>>>>>> origin/tutorial
 	}
 
 	override public function update(elapsed:Float):Void
