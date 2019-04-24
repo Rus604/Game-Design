@@ -38,9 +38,7 @@ import flixel.util.FlxColor;
 		var spaceJustPressed:Bool = FlxG.keys.justPressed.SPACE;
 		
 		// Here are some *very* basic examples of how to respond to input.
-		//  You can do a lot more here to make the game feel much better.
-		
-		
+		//  You can do a lot more here to make the game feel much better.		
 		
 		if (leftPressed) { 				// Move left
 			this.acceleration.x = -50;

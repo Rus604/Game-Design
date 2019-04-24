@@ -8,8 +8,12 @@ class PlayState extends FlxState
 	{
 		super.create();
 			
-		var spr = new TopDownHero(25, 25);
-		add(spr);
+		var topHero = new TopDownHero(25, 25);
+		add(topHero);
+		var pHero = new PlatformerHero(100, 100);
+		add(pHero);
+		var ground = new Ground(150, 350);
+		add(ground);
 
 	}
 
