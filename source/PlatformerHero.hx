@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.system.FlxAssets.FlxGraphicAsset;
 import flixel.util.FlxColor;
@@ -22,4 +23,28 @@ class PlatformerHero extends FlxSprite
 		// Set max velocity for x to limit speed of character
 		this.maxVelocity.x = 200;	
 	}
+	
+	override public function update(elapsed:Float):Void
+	{
+		var leftPressed:Bool = FlxG.keys.pressed.LEFT;
+		var rightPressed:Bool = FlxG.keys.pressed.RIGHT;
+
+		if (leftPressed)
+		{ 				                // Move left
+			this.acceleration.x = -50;
+		} else if (rightPressed)
+		{ 		                        // Move right
+			this.acceleration.x = 50;
+		}
+		else
+		{ 					         	// no action
+			this.velocity.set(0, 0);
+			this.acceleration.set(0, 0);
+		}
+		super.update(elapsed);
+	}
+	
 }
+
+
+
