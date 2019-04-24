@@ -18,7 +18,8 @@ import flixel.util.FlxColor;
 	public function new(?X:Float=0, ?Y:Float=0, ?SimpleGraphic:FlxGraphicAsset) 
 	{
 		super(X, Y, SimpleGraphic);
-		this.makeGraphic(50, 50, FlxColor.RED);
+		this.makeGraphic(50, 50, FlxColor.WHITE);
+		this.color = FlxColor.RED;
 		
 		// Set acceleration and max velocity to represent gravity.
 		//this.acceleration.y = 10;
@@ -56,21 +57,24 @@ import flixel.util.FlxColor;
 	
 		if (spaceJustPressed)
 		{
-			colorCycle = (colorCycle + 1) % 2;
-			
+			colorCycle = (colorCycle + 1) % 4 ;
 			if (colorCycle == 0)
 			{
-				this.color = 0x333456;
+				this.color = FlxColor.RED;
 			}
 			else if (colorCycle == 1)
 			{
-				this.color = 0xFFFF56;
+				this.color = FlxColor.GREEN;
 			}
-			
-			//this.velocity.y = -100;
+			else if (colorCycle == 2)
+			{
+				this.color = FlxColor.BLUE;
+			}
+			else if (colorCycle == 3)
+			{
+				this.color = FlxColor.YELLOW;
+			}
 		}
-
-		
 		super.update(elapsed);
 	}
 }
