@@ -57,8 +57,28 @@ import flixel.util.FlxColor;
 			this.acceleration.set(0, 0);
 		}
 		
+<<<<<<< Updated upstream
 		if (spaceJustPressed) { // Jump. Note: no restrictions that prevent infinite jumping.
 			this.velocity.y = -100;
+=======
+		if (spaceJustPressed)
+		{
+			colorCycle = colorCycle + 1;
+			
+			if (colorcycle = 0)
+			{
+				this.color = 0x663456;
+				x = x + 1;
+			}
+			else if (x = 1)
+			{
+				this.color = 0x663456;
+				x = x + 1;	
+				}
+			}
+			
+			//this.velocity.y = -100;
+>>>>>>> Stashed changes
 		}
 
 		
